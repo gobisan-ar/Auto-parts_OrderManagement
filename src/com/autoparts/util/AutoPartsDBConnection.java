@@ -5,17 +5,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class AutoPartsDBConnection {
-	private String jdbcURL = "jdbc:sqlserver://localhost\\DESKTOP-EH7IN5D:1433;databaseName=FoztiAP";
-	// jdbc:mysql://localhost:3306/autoparts?useSSL=false
-	private String jdbcUsername = "sa"; //"root"
-	private String jdbcPassword = "microsql123"; //"gobisql123"
+	private String jdbcURL = "jdbc:sqlserver://localhost"; // add server name and database name 
+	private String jdbcUsername = ""; 
+	private String jdbcPassword = "";
 
 	// get database connection
 	protected Connection getConnection() {
 		Connection connection = null;
 
 		try {
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); // com.mysql.jdbc.Driver
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
 		} catch (SQLException e) {
 			e.printStackTrace();

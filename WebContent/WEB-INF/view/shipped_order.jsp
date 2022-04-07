@@ -12,13 +12,16 @@
 
 <title>Shipped Orders</title>
 
+<!-- Bootstrap CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/css/salesStyles.css">
+	href="<%=request.getContextPath()%>/bootstrap/css/bootstrap.min.css">
+	
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/css/salesStyles.css">
+
 <link rel="stylesheet" rel="stylesheet"
 	href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-<link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/bootstrap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
-
+	
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script

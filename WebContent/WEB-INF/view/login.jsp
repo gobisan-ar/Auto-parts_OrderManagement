@@ -14,15 +14,18 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/bootstrap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+	href="<%=request.getContextPath()%>/bootstrap/css/bootstrap.min.css">
+	
 <link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/css/salesStyles.css">
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+	href="<%=request.getContextPath()%>/css/salesStyles.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	
 <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+	
 </head>
 <body class="login-body">
 	<div class="container-fluid">
@@ -30,10 +33,11 @@
 			<div class="col-md-4 col-md-offset-4">
 				<!-- Login form creation starts-->
 				<form class="form-container"
-					action="<%=request.getContextPath()%>/login"
-					method="post" id="#loginForm">
+					action="<%=request.getContextPath()%>/login" method="post"
+					id="#loginForm">
 					<div class="form-header">
-						<img src="<%=request.getContextPath()%>/images/logoR.png" style="width: 50%" alt="logo">
+						<img src="<%=request.getContextPath()%>/images/logoR.png"
+							style="width: 50%" alt="logo">
 						<div>&nbsp;</div>
 						<div class="font-weight-bold" style="color: #B0B3B8;">
 							<h4>Hello! let's get started</h4>

@@ -10,12 +10,17 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 <title>Shipping Zone</title>
+
+<!-- Bootstrap CSS -->
 <link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/css/salesStyles.css">
+	href="<%=request.getContextPath()%>/bootstrap/css/bootstrap.min.css">
+	
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/css/salesStyles.css">
+	
 <link rel="stylesheet" rel="stylesheet"
 	href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-<link rel="stylesheet" type="text/css"
-	href="http://localhost:8080/AutoParts/bootstrap/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+	
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	crossorigin="anonymous"></script>
